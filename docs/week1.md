@@ -35,10 +35,21 @@ Login With Google로 로그인
     "playwright": {
       "command": "npx",
       "args": [
-        "@playwright/mcp@latest"
+        "@playwright/mcp@latest",
+        "--headless"
       ]
     }
   }
 }
+```
+
+**MCP 사용해보기**  
+_context7_  
+```
+FastMCP 써서 mcp 서버 작성하는 방법 튜토리얼 형태로 정리해줘. use context7
+```
+_playwright_
+```
+forif.org에 들어가서 화면 캡쳐해서 저장하고, '스터디 보러가기' 버튼을 눌러. 그리고 스터디 목록 정리해서 표시해줘. use playwright
 ```
 
