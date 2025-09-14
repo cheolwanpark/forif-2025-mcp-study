@@ -39,6 +39,8 @@ gemini
 # 프롬프트 입력
 > say hello to [본인 이름]! use hello world mcp.
 ```
+<img width="800" alt="Screenshot 2025-09-14 at 1 10 25 PM" src="https://github.com/user-attachments/assets/bc956f09-caa5-4573-a845-14c71c2f685e" />
+
 
 # 바이브 코딩으로 MCP 만들어보기
 ### 요구사항 정리
@@ -89,3 +91,4 @@ gemini
 # 프롬프트 입력
 > say hello in various languages! use hello multilingual mcp.
 ```
+<img width="800" alt="Screenshot 2025-09-14 at 1 44 02 PM" src="https://github.com/user-attachments/assets/e3325134-05aa-4d8f-a424-84655279f0c5" />
