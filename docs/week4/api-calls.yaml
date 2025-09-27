@@ -1,0 +1,111 @@
+type: collection.insomnia.rest/5.0
+name: KakaoMap
+meta:
+  id: wrk_5f524f758efb42a1b2fdc19132480dd7
+  created: 1758957930226
+  modified: 1758957930226
+  description: ""
+collection:
+  - url: https://nominatim.openstreetmap.org/search
+    name: Get Location
+    meta:
+      id: req_62b8fe03b266424881deba2a72b792d0
+      created: 1758957954392
+      modified: 1758958069662
+      isPrivate: false
+      description: ""
+      sortKey: -1758957954392
+    method: GET
+    parameters:
+      - id: pair_9662f5f836d240f199d480fb9d6303ea
+        name: q
+        value: 신촌
+        description: ""
+        disabled: false
+      - id: pair_cc7ed07fda254b61838b3e881512ff5c
+        name: format
+        value: json
+        description: ""
+        disabled: false
+      - id: pair_ea437f33ede5493485ce1b789529edf7
+        name: addressdetails
+        value: "1"
+        description: ""
+        disabled: false
+      - id: pair_0bc1ee45b87d4626b06d7b2db031e742
+        name: limit
+        value: "1"
+        description: ""
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/11.6.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://dapi.kakao.com/v2/local/search/keyword.json
+    name: Keyword Search
+    meta:
+      id: req_e38d81c9761842de81a4c53446d80c05
+      created: 1758958096558
+      modified: 1758963396558
+      isPrivate: false
+      description: ""
+      sortKey: -1758958096558
+    method: GET
+    parameters:
+      - id: pair_3602b907313b4b60a9cd9e2751eaf366
+        name: query
+        value: 맛집
+        description: ""
+        disabled: false
+      - id: pair_9fc12837946b44f39f9b63db370c644a
+        name: x
+        value: "126.9369084"
+        description: ""
+        disabled: false
+      - id: pair_0d3c314def91417a92e7b86349c48825
+        name: y
+        value: "37.5551517"
+        description: ""
+        disabled: false
+      - id: pair_25d4618b336d4c90a69cab2bb734019b
+        name: radius
+        value: "2000"
+        description: ""
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/11.6.1
+        id: pair_4f0acbdacf5740ccb6737da9c470ede3
+      - id: pair_74e15c9e84fe4c9282780fb6e773cfb8
+        name: Authorization
+        value: KakaoAK <API_KEY>
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_28e4dc4f696cfb1a365304c15573a2f10c3a38a0
+    created: 1758957930229
+    modified: 1758957930229
+environments:
+  name: Base Environment
+  meta:
+    id: env_28e4dc4f696cfb1a365304c15573a2f10c3a38a0
+    created: 1758957930227
+    modified: 1758957930227
+    isPrivate: false
