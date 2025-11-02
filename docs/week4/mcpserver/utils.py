@@ -1,4 +1,4 @@
-KAKAO_API_KEY = "" # 본인의 카카오 API 키를 입력하세요.
+KAKAO_API_KEY = "600899c3c380c0e5c408233b2342609e" # 본인의 카카오 API 키를 입력하세요.
 
 import requests
 from dataclasses import dataclass
